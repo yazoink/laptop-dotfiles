@@ -89,7 +89,7 @@ static const Key keys[] = {
     { MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
     { MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
     { MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-    { MODKEY, 			            XK_l, 	   spawn,          SHCMD("slock") },
+    { MODKEY, 			            XK_o, 	   spawn,          SHCMD("slock") },
     { MODKEY, 			            XK_w, 	   spawn,          SHCMD("librewolf") },
     { MODKEY, 			            XK_e, 	   spawn,          SHCMD("kitty -e ranger") },
     { MODKEY, 			            XK_s, 	   spawn,          SHCMD("/home/gene/.local/bin/screenshotmenu") },
