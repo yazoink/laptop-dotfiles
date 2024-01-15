@@ -7,9 +7,12 @@ static const char *fonts[] = {
 	"Cascadia Code:size=12"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-
-#include "/home/gene/.cache/wal/colors-wal-dmenu.h"
-
+static const char *colors[SchemeLast][2] = {
+	/*     fg         bg       */
+	[SchemeNorm] = { "#ebdbb2", "#1d2021" },
+	[SchemeSel] = { "#ebdbb2", "#665c54" },
+	[SchemeOut] = { "#000000", "#00ffff" },
+};
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 
