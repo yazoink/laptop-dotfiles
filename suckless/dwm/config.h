@@ -92,6 +92,7 @@ static const Key keys[] = {
     { MODKEY, 			            XK_l, 	   spawn,          SHCMD("slock") },
     { MODKEY, 			            XK_w, 	   spawn,          SHCMD("librewolf") },
     { MODKEY, 			            XK_e, 	   spawn,          SHCMD("kitty -e ranger") },
+    { MODKEY, 			            XK_s, 	   spawn,          SHCMD("/home/gene/.local/bin/screenshotmenu") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
