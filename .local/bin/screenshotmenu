@@ -1,0 +1,16 @@
+#!/bin/bash
+
+dmenu_cmd='dmenu -i'
+dir="/home/gene/pictures/screenshots/"
+format="%Y-%m-%d-%T-screenshot.png"
+output="$dir$format"
+
+choices="Select\nWindow\nFullscreen"
+
+choice=$(printf "$choices" | $dmenu_cmd -p ">")
+
+case "$choice" in
+    "Select") scrot "$output" --select --line mode=edge || exit ;;
+    "Window") scrot "$output" --focused --border || exit ;;
+    "Fullscreen") scrot "$output" --focused --border || exit ;;
+esac
